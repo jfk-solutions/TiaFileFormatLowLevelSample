@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="jfk-solutions.TiaFileFormat" Version="2025.6.23.2" />
+    <PackageReference Include="jfk-solutions.TiaFileFormat" Version="2025.6.23.3" />
   </ItemGroup>
 
 </Project>
