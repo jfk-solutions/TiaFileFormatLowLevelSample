@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="SampleApp/SampleApp.csproj" />
+  <Project Path="SampleCheckUserCredentials/SampleCheckUserCredentials.csproj" Id="4d202c23-8555-4d7c-87e7-6e8db0347f98" />
 </Solution>

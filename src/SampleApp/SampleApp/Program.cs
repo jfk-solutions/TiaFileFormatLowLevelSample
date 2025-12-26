@@ -3,6 +3,7 @@ using TiaFileFormat;
 using TiaFileFormat.Database;
 using TiaFileFormat.Database.StorageTypes;
 using TiaFileFormat.ExtensionMethods;
+using TiaFileFormat.Wrappers.Controller.Network;
 
 var networkInformationConverter = new TiaFileFormat.Wrappers.Controller.Network.NetworkInformationConverter();
 
@@ -19,7 +20,7 @@ foreach (var cpu in cpus)
         .ToList();
 
     Console.WriteLine("CPU: " + cpu.Name + " (" + cpu.Path + ")");
-    foreach(var nw in networkInfos)
+    foreach(var nw in networkInfos.OfType<EthernetNetworkInformation>())
     {
         Console.WriteLine("  " + nw.Name + ": " + nw.IpAddress);
     }
